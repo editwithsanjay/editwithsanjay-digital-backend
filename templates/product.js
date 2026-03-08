@@ -9,7 +9,7 @@ export function product_template(url) {
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f9f9f9;
+            background-color: #f6efefff;
             padding: 20px;
         }
 
