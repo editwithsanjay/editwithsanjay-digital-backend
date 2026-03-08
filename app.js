@@ -24,7 +24,13 @@ const app = express();
 let mongoConnection = false;
 
 app.use(cors({
-    origin: '*',
+    origin: [
+        'https://editwithsanjay-digital-frontend.vercel.app',
+        'https://www.editwithsanjay.in',
+        'https://editwithsanjay.in',
+        'http://localhost:5173',
+        process.env.FRONTEND_URL
+    ],
     credentials: true
 }));
 app.use(express.json());

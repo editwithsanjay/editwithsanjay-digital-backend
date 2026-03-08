@@ -28,7 +28,16 @@ const app = express()
 //     origin : process.env.FRONTEND_URL
 // }))
 
-app.use(cors({ origin: '*', credentials: true }))
+app.use(cors({
+    origin: [
+        'https://editwithsanjay-digital-frontend.vercel.app',
+        'https://www.editwithsanjay.in',
+        'https://editwithsanjay.in',
+        'http://localhost:5173',
+        process.env.FRONTEND_URL
+    ],
+    credentials: true
+}))
 
 app.use(express.json())
 app.use(cookieParser())
