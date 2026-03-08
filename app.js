@@ -24,14 +24,7 @@ const app = express();
 let mongoConnection = false;
 
 app.use(cors({
-    origin: [
-        process.env.FRONTEND_URL,
-        'http://localhost:5173',
-        'https://editwithsanjay.in',
-        'https://www.editwithsanjay.in',
-        'https://editwithsanjay-digital-store-2.netlify.app',
-        'https://editwithsanjay-digital-frontend.vercel.app'
-    ],
+    origin: '*',
     credentials: true
 }));
 app.use(express.json());
@@ -98,4 +91,6 @@ app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ error: "Internal Server Error" });
 });
+
+export default app;
 
