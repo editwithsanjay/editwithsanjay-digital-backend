@@ -34,6 +34,7 @@ app.use(cors({
         'https://www.editwithsanjay.in',
         'https://editwithsanjay.in',
         'http://localhost:5173',
+        'https://store.editwithsanjay.in',
         process.env.FRONTEND_URL
     ],
     credentials: true
