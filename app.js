@@ -28,7 +28,8 @@ app.use(cors({
         'http://localhost:5173',
         'https://editwithsanjay.in',
         'https://www.editwithsanjay.in',
-        'https://editwithsanjay-digital-store-2.netlify.app'
+        'https://editwithsanjay-digital-store-2.netlify.app',
+        'https://editwithsanjay-digital-frontend.vercel.app'
     ],
     credentials: true
 }));
