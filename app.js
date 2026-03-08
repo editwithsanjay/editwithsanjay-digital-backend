@@ -31,7 +31,8 @@ app.use(cors({
         'https://www.editwithsanjay.in',
         'https://editwithsanjay-digital-store-2.netlify.app',
         'https://editwithsanjay-digital-frontend.vercel.app',
-        'https://editwithsanjay-digital-frontend.vercel.app'
+        'https://editwithsanjay-digital-frontend.vercel.app',
+        'https://editwithsanjay-digital-backend.vercel.app'
     ],
     credentials: true
 }));
